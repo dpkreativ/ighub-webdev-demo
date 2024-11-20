@@ -1,0 +1,19 @@
+/* CSS Reset */
+@import url(./reset.css);
+
+/* General Styles */
+/* TODO: Create CSS color variables, global font for the code */
+
+/* Header */
+
+/* Main */
+
+/* Footer */
+
+/* Responsive Styles for Tablet Screens */
+@media screen and (min-width: 768px) {
+}
+
+/* Responsive Styles for Desktop Screens */
+@media screen and (min-width: 1024px) {
+}
