@@ -3,22 +3,63 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>IGHub Web Dev Demo</title>
+    <title>IGHub Web Dev - Class of 2024</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <body>
+  <body class="karla-400">
     <!-- Header -->
     <header>
-      <!-- TODO: create a responsive header with our site's title -->
-       <h1>Code Runnner</h1>
-       <P>The beginner's quest</P>
+      <div>
+        <div class="logo">
+          <img src="./images/innovation-growth-hub.webp" alt="IGHub" />
+        </div>
+
+        <div class="dm-serif-display-regular">Web Dev Track</div>
+      </div>
+
+      <nav>
+        <a href="https://github.com/dpkreativ/ighub-webdev-demo" class="icon">
+          <i class="ri-github-fill"></i>
+        </a>
+      </nav>
     </header>
 
     <!-- Main -->
     <main>
+      <section id="banner">
+        <h1 class="dm-serif-display-regular">Class of 2024</h1>
+      </section>
       <!-- Images Section -->
       <!-- TODO: Make this section responsive. 4 columns on Desktop, 3 columns on Tablet, 1 column on Mobile -->
-      <section>
+      <section id="talents">
         <!-- TODO: Create a reusable card component that will contain each student's image, name and social media links. At least each person's GitHub -->
+        <div class="talent">
+          <div class="talent-image-box">
+            <img src="./images/john-wick.jpg" alt="John Wick" />
+          </div>
+          <div class="talent-info">
+            <h3>John Wick</h3>
+            <a href="https://github.com/john-wick" class="icon">
+              <i class="ri-github-fill"></i>
+            </a>
+          </div>
+        </div>
       </section>
     </main>
 
