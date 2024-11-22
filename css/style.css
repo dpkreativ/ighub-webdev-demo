@@ -3,17 +3,132 @@
 
 /* General Styles */
 /* TODO: Create CSS color variables, global font for the code */
+:root {
+  --bg-color: #f8f8ff;
+  --shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family: sans-serif;
+}
+
+header,
+main {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.karla-400 {
+  font-family: "Karla", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.dm-serif-display-regular {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.dm-serif-display-regular-italic {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.icon {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+}
 
 /* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+header > div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  width: clamp(5rem, 10vw, 7rem);
+}
 
 /* Main */
+main {
+  padding: 1rem;
+  display: grid;
+  gap: 1rem;
+}
+
+#banner {
+  padding: 5rem 1rem;
+  background-color: #000;
+  background-image: url("../images/pexels-instawally-176851.jpg");
+  color: #fff;
+  border-radius: 1rem;
+  box-shadow: var(--shadow);
+}
+
+#banner h1 {
+  text-align: center;
+  font-size: clamp(2rem, 5vw, 5rem);
+}
+
+#talents {
+  display: grid;
+  gap: 1rem;
+}
+
+.talent {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: var(--shadow);
+}
+
+.talent-image-box {
+  border-radius: 50%;
+  overflow: hidden;
+  width: clamp(6rem, 10vw, 8rem);
+}
+
+.talent-info h3 {
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
+}
 
 /* Footer */
 
 /* Responsive Styles for Tablet Screens */
 @media screen and (min-width: 768px) {
+  #talents {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* Responsive Styles for Desktop Screens */
 @media screen and (min-width: 1024px) {
+  #talents {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
