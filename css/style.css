@@ -22,7 +22,8 @@ main {
 
 img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
 }
 
 a {
@@ -111,6 +112,7 @@ main {
   border-radius: 50%;
   overflow: hidden;
   width: clamp(6rem, 10vw, 8rem);
+  aspect-ratio: 1/1;
 }
 
 .talent-info h3 {
